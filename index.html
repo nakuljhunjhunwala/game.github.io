@@ -1,0 +1,446 @@
+<html>
+<head>
+<title>
+sabse smart kon
+</title>
+<style type="text/css">
+
+body{
+
+background-color: rgb(207, 160, 7)
+
+
+
+}
+
+
+
+.black {
+ 
+height: 0px;
+width: 650px;
+position: fixed;
+background-color: black;
+margin-top: -600px;
+opacity: 0.5;
+}
+
+.main {
+
+height: 475px;
+width: 650px;
+background-image: url(main.png);
+background-repeat: no-repeat;
+background-size: 100%;
+overflow: hidden;
+transition-duration: 2s;
+
+}
+
+
+.main img {
+
+float: left;
+
+
+
+}
+
+
+
+.g2 {
+height: 0px;
+width: 650px;
+background-image: url(g2.png);
+background-repeat: no-repeat;
+background-size: 100%;
+overflow: hidden;
+transition-duration: 2s;
+
+}
+
+
+.g2 img {
+
+float: left;
+margin-top: 312px;
+height: 38px;
+width: 47px;
+
+}
+
+
+
+.g2 img:hover{
+
+border: 3px solid #da8403;
+}
+
+
+
+.tt {
+
+margin-top: 150px;
+margin-left: 81px;
+}
+
+.main img:hover{
+
+border: 3px solid #da8403;
+}
+
+
+
+
+
+
+
+
+.aa {
+
+
+margin-top: 135px;
+margin-left: -6px;
+
+
+}
+
+
+.bb {
+
+height: 50px;
+
+  margin-top: 135px;
+margin-left: 68px;
+
+}
+
+
+.dd {
+
+
+
+
+height: 316px;
+width: 140px;
+margin-top: 112px;
+margin-left: 50px;
+
+
+}
+
+
+.ab {
+
+
+height: 80px;
+width: 97px;
+margin-left: 7px;
+margin-top: 110px;
+
+}
+
+.bc {
+
+height: 113px;
+margin-top: 268px;
+margin-left: -34px;
+
+}
+
+
+.kaa {
+
+margin-left: 68px;
+
+}
+
+.kha {
+
+margin-left: 97px;
+
+
+}
+
+
+.ga {
+
+margin-left: 97px;
+
+
+}
+
+.dha {
+
+margin-left: 97px;
+
+
+
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+  var bleep=new Audio();
+
+  bleep.src="md.mp3";
+
+let tm;
+
+tm = setTimeout( ()=> {
+  document.getElementById("black").style.height="0px";
+  alert("Timeout");    
+  document.write("Time out"); }
+  , 20000
+  
+  )
+
+
+
+let tm2;
+
+tm2 = setTimeout( ()=> {
+  document.getElementById("black").style.height="0px";
+  alert("Timeout");    
+  document.write("Time out"); }
+  , 40000
+  
+  )
+
+
+
+
+
+
+function one() {
+  document.getElementById("black").style.height="600px";
+  bleep.play();
+  clearTimeout(tm);
+  setTimeout(fu, 10000);
+
+  function fu(){
+alert("Your answer was wrong");    
+document.getElementById("black").style.height="0px";
+document.getElementById("main").style.height="0px";
+document.write("You are loser")
+
+
+}
+}
+
+
+
+function two() {
+
+    document.getElementById("black").style.height="600px";
+    bleep.play();
+    clearTimeout(tm);
+
+  setTimeout(lu, 10000);
+
+  function lu(){
+alert("Your answer was right");    
+document.getElementById("black").style.height="0px";
+document.getElementById("main").style.height="0px";
+document.getElementById("g2").style.height="475px";
+
+
+
+}
+}
+
+
+
+function countDown(secs,elem) {
+
+var element = document.getElementById(elem);
+element.innerHTML = "You have "+secs+" seconds";
+
+
+
+if (secs < 0) {
+clearTimeout(timer);
+
+}
+
+
+
+if (secs < 20) {
+  element.innerHTML += '<h4>time for one question has ended</h4>';
+
+}
+
+
+
+secs--;
+let timer = setTimeout('countDown('+secs+',"'+elem+'")', 1000);
+}
+
+
+
+
+
+
+
+
+
+
+
+function one2() {
+  document.getElementById("black").style.height="600px";
+  bleep.play();
+  clearTimeout(tm2);
+  setTimeout(fu, 10000);
+
+  function fu(){
+alert("Your answer was wrong");    
+document.getElementById("black").style.height="0px";
+document.getElementById("g2").style.height="0px";
+document.write("You are loser")
+
+
+}
+}
+
+
+
+function two2() {
+
+    document.getElementById("black").style.height="600px";
+    bleep.play();
+    clearTimeout(tm2);
+
+  setTimeout(lu, 10000);
+
+  function lu(){
+alert("Your answer was right");    
+document.getElementById("black").style.height="0px";
+document.getElementById("g2").style.height="0px";
+document.write("more question will be added soon")
+
+
+}
+}
+
+
+
+
+
+
+textt = setTimeout( ()=> {
+  element.innerHTML = '<h2>time for one question has ended</h2>';
+ }
+  , 20000
+  
+  )
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+<h1 align="center">You will get 20 seconds for Every Question</h1>
+
+
+
+<p>
+
+
+&nbsp;
+
+
+</p>
+
+
+<div class="main" id="main">
+
+
+    
+
+  <img src="1.png" height="60px" width="40px" class="tt" onclick="one()"> 
+  <br>
+  <img src="6.png" height="100px" width="100px" onclick="one()" class="bc"> 
+
+  <img src="2.png" height="55px" width="60px"" onclick="one()" class="aa"> 
+  <img src="3.png" height="30px" width="30px" onclick="one()" class="bb"> 
+  <img src="4.png" height="30px" width="30px" onclick="two()" class="dd"> 
+  <img src="5.png" height="100px" width="100px" onclick="one()" class="ab">
+  <br> 
+  <br>
+  
+</div>
+
+
+<div class="g2" id="g2">
+
+
+    
+
+  <img src="kaa.png" height="30px" width="30px" class="kaa" onclick="two2()"> 
+  <img src="kha.png" height="30px" width="30px" class="kha" onclick="one2()"> 
+
+  <img src="ga.png" height="30px" width="30px""  class="ga" onclick="one2()"> 
+  <img src="dha.png" height="30px" width="30px"  class="dha" onclick="one2()"> 
+  
+  
+</div>
+
+
+
+
+
+
+
+
+
+<div class="black" id="black">   </div>
+
+
+
+
+
+
+
+
+
+
+
+<p>
+
+&nbsp;
+
+&nbsp;
+
+</p>
+
+
+
+
+<font size="20px">
+<div id="status"></div>
+<script type="text/javascript"> countDown(40,"status"); </script>
+
+</font>
+
+
+</body>
+</html>
